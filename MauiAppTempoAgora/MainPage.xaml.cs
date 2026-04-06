@@ -52,7 +52,7 @@ namespace MauiAppTempoAgora
             catch (Exception ex)
             {
                 // Como nós usamos o "throw new Exception" lá no DataService, 
-                // a mensagem "Cidade não encontrada" vai cair magicamente aqui dentro!
+                // a mensagem "Cidade não encontrada" vai cair aqui dentro!
                 await DisplayAlert("Ops", ex.Message, "OK");
                 lbl_res.Text = "Busca cancelada.";
             }
